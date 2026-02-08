@@ -1,9 +1,15 @@
+# Starter Assignment
+
+> 🧪 This project was completed as part of the DigiCrome ML Internship program.
+> Scope, requirements, and datasets were defined by the program.
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/13zBya6Q)
 ﻿# GitHub Classroom Assignment Guide
 
 Welcome to your first GitHub Classroom assignment! This guide will walk you through everything you need to know about using GitHub for your coursework.
 
 ## Table of Contents
+
 - [Prerequisites](#prerequisites)
 - [Step 1: Accepting the Assignment](#step-1-accepting-the-assignment)
 - [Step 2: Cloning the Repository](#step-2-cloning-the-repository)
@@ -27,14 +33,14 @@ Welcome to your first GitHub Classroom assignment! This guide will walk you thro
 
 Before you begin, make sure you have:
 
-- [ ] A GitHub account (create one at [github.com](https://github.com))
-- [ ] Git installed on your computer
+- [x] A GitHub account (create one at [github.com](https://github.com))
+- [x] Git installed on your computer
   - **Windows**: Download from [git-scm.com](https://git-scm.com/download/win)
   - **Mac**: Install via Terminal: `brew install git` or download from [git-scm.com](https://git-scm.com/download/mac)
   - **Linux**: `sudo apt-get install git` (Ubuntu/Debian) or `sudo yum install git` (Fedora)
-- [ ] Python installed (version 3.8 or higher recommended)
-- [ ] A code editor (VS Code, PyCharm, or similar)
-- [ ] Basic command line knowledge
+- [x] Python installed (version 3.8 or higher recommended)
+- [x] A code editor (VS Code, PyCharm, or similar)
+- [x] Basic command line knowledge
 
 ### Verify Your Installation
 
@@ -55,7 +61,7 @@ You should see version numbers displayed for both commands.
 
 Your instructor will provide you with a unique GitHub Classroom assignment link. It will look something like:
 
-```
+```http
 https://classroom.github.com/a/xxxxxxxxx
 ```
 
@@ -87,6 +93,7 @@ Cloning creates a local copy of your repository on your computer.
 ### 2.1 Copy the Repository URL
 
 On your GitHub repository page:
+
 1. Click the green **"Code"** button
 2. Make sure **"HTTPS"** is selected
 3. Click the clipboard icon to copy the URL
@@ -138,7 +145,7 @@ You should see a message like: `On branch main` or `On branch master`
 
 Your assignment repository typically contains:
 
-```
+```text
 assignment-name-your-username/
 ├── .github/
 │   └── workflows/
@@ -156,6 +163,7 @@ assignment-name-your-username/
 ```
 
 **Important Files:**
+
 - **assignment.md**: Read this first! Contains what you need to do
 - **src/**: Write your code here
 - **tests/**: Contains tests that verify your code works
@@ -191,7 +199,8 @@ git branch
 ```
 
 You should see:
-```
+
+```bash
   main
 * development
 ```
@@ -288,14 +297,16 @@ python -m unittest discover -v
 ### 6.4 Understanding Test Output
 
 **Passing tests:**
-```
+
+```bash
 tests/test_assignment.py::test_function_one PASSED
 tests/test_assignment.py::test_function_two PASSED
 ========================= 2 passed in 0.05s =========================
 ```
 
 **Failing tests:**
-```
+
+```bash
 tests/test_assignment.py::test_function_one FAILED
 ========================= FAILURES =================================
 _________________________ test_function_one ________________________
@@ -348,6 +359,7 @@ git commit -m "Add function to calculate sum"
 ```
 
 **Writing Good Commit Messages:**
+
 - ✅ "Add user input validation"
 - ✅ "Fix division by zero error"
 - ✅ "Implement bubble sort algorithm"
@@ -453,13 +465,15 @@ CI/CD (Continuous Integration/Continuous Deployment) automatically tests your co
 
 ### 9.3 Viewing CI/CD Results
 
-**Method 1: Actions Tab**
+_**Method 1: Actions Tab**_
+
 1. Go to your repository on GitHub
 2. Click the **"Actions"** tab
 3. You'll see a list of all workflow runs
 4. Click on a run to see details
 
-**Method 2: Commit Status**
+_**Method 2: Commit Status**_
+
 1. Look for a ✅ (passed) or ❌ (failed) next to your commits
 2. Click the icon to see details
 
@@ -473,6 +487,7 @@ CI/CD (Continuous Integration/Continuous Deployment) automatically tests your co
 ### 9.5 Reading CI/CD Logs
 
 If tests fail:
+
 1. Click on the failed workflow run
 2. Click on the job name (usually "Autograding")
 3. Expand the "Run tests" section
@@ -482,7 +497,7 @@ If tests fail:
 ### 9.6 Common CI/CD Failures
 
 | Issue | Cause | Solution |
-|-------|-------|----------|
+| ------- | ------- | ---------- |
 | Import errors | Missing dependencies | Check `requirements.txt` |
 | Test failures | Code doesn't meet requirements | Fix your code logic |
 | Syntax errors | Python syntax mistakes | Check your code for typos |
@@ -503,6 +518,7 @@ Pull Requests (PRs) are proposals to merge your changes into the main branch.
 ### 10.2 Create a Pull Request
 
 **On GitHub:**
+
 1. Go to your repository
 2. Click **"Pull requests"** tab
 3. Click **"New pull request"**
@@ -513,12 +529,14 @@ Pull Requests (PRs) are proposals to merge your changes into the main branch.
 ### 10.3 Fill in PR Details
 
 **Title**: Brief description of what you did
-```
+
+```text
 Complete assignment 1: Calculator functions
 ```
 
 **Description**: Explain your changes
-```
+
+```text
 ## Changes Made
 - Implemented addition function
 - Implemented subtraction function
@@ -535,12 +553,14 @@ Complete assignment 1: Calculator functions
 ### 10.4 Request Review (Optional)
 
 If your instructor requires it:
+
 - Click **"Reviewers"** on the right
 - Select your instructor or TA
 
 ### 10.5 Verify Checks Pass
 
 Wait for the CI/CD checks to complete on your PR:
+
 - ✅ All checks should be green
 - If any fail, fix the issues and push again
 - The PR will automatically update
@@ -554,6 +574,7 @@ Once your PR is approved (or if auto-grading passes):
 ### 11.1 Check PR Status
 
 Make sure:
+
 - [ ] All CI/CD checks pass (green checkmarks)
 - [ ] Any required reviews are approved
 - [ ] No merge conflicts exist
@@ -611,6 +632,7 @@ Before considering your assignment submitted:
 ### 12.3 What Gets Graded?
 
 Typically, instructors will grade:
+
 - **Code on the main branch** at the deadline
 - **Test results** from CI/CD
 - **Commit history** (shows your work progression)
@@ -619,6 +641,7 @@ Typically, instructors will grade:
 ### 12.4 Submitting After the Deadline
 
 If you need to submit late:
+
 1. Contact your instructor FIRST
 2. Continue working on your branch
 3. Push your changes
@@ -633,6 +656,7 @@ If you need to submit late:
 **Problem**: Can't push to GitHub
 
 **Solution**: Set up SSH keys or use HTTPS
+
 ```bash
 # Check your remote URL
 git remote -v
@@ -646,6 +670,7 @@ git remote set-url origin https://github.com/your-org/your-repo.git
 **Problem**: Your local code is outdated
 
 **Solution**: Pull the latest changes
+
 ```bash
 git pull origin main
 ```
@@ -655,6 +680,7 @@ git pull origin main
 **Problem**: Git can't automatically merge changes
 
 **Solution**:
+
 ```bash
 # 1. Pull latest changes
 git pull origin main
@@ -686,6 +712,7 @@ git push
 **Problem**: You're not in the repository directory
 
 **Solution**:
+
 ```bash
 # Navigate to your repository
 cd path/to/your/repository
@@ -697,11 +724,13 @@ git status
 ### Issue 5: Tests Fail on GitHub but Pass Locally
 
 **Possible causes**:
+
 - Different Python versions
 - Missing files (check `.gitignore`)
 - Different dependencies
 
 **Solution**:
+
 ```bash
 # Check what files are tracked
 git ls-files
@@ -720,6 +749,7 @@ git push
 **Problem**: Module not found error
 
 **Solution**:
+
 ```bash
 # Install pytest
 pip install pytest
@@ -737,6 +767,7 @@ where python  # Windows
 **Problem**: Remote has changes you don't have locally
 
 **Solution**:
+
 ```bash
 # Pull with rebase
 git pull --rebase origin main
@@ -760,6 +791,7 @@ git push
    - Follow Python style guide (PEP 8)
 
 2. **Test frequently**
+
    ```bash
    # Run tests after every major change
    pytest -v
@@ -776,12 +808,14 @@ git push
    - Keep main branch stable
 
 2. **Pull before you push**
+
    ```bash
    git pull origin main
    git push
    ```
 
 3. **Review your changes before committing**
+
    ```bash
    git diff          # See changes
    git status        # Check what's staged
@@ -790,7 +824,8 @@ git push
 ### Organization
 
 1. **Keep your workspace organized**
-   ```
+
+   ```text
    ~/Documents/
    └── Coursework/
        └── CS101/
@@ -800,12 +835,14 @@ git push
    ```
 
 2. **Use virtual environments**
+
    ```bash
    python -m venv venv
    source venv/bin/activate
    ```
 
 3. **Document your code**
+
    ```python
    def calculate_average(numbers):
        """
@@ -977,10 +1014,10 @@ git push -u origin development
 
 ---
 
-**Good luck with your assignment! 🚀**
+_**Good luck with your assignment! 🚀**_
 
 If you have any questions, please reach out during office hours or post in the course discussion forum.
 
 ---
 
-*Last updated: February 2026*
+_*Last updated: February 2026*_
