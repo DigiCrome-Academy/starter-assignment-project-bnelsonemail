@@ -1,0 +1,56 @@
+# ============================================================
+# Git Ignore Rules (Python + IDEs)
+# Purpose: Keep build artifacts, caches, and local tooling files
+# out of version control while preserving source and config.
+# ============================================================
+
+# --- Python bytecode and caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# --- Python build artifacts ---
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# --- Virtual environments (pip / uv / conda / venv) ---
+.venv/
+venv/
+env/
+.env/
+.python-version
+
+# uv (Python packaging tool)
+.uv/
+uv.lock
+
+# Conda
+.conda/
+conda-meta/
+*.conda
+*.bld
+
+# --- Logs and local data ---
+*.log
+*.sqlite3
+*.db
+
+# --- IDEs ---
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+
